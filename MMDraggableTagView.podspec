@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   s.author       = { "michaelin1208" => "michaelin1208@qq.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/michaelin1208/MMDraggableTagView.git", :tag => "#{s.version}" }
-  s.source_files  = "MMDraggableTagView", "MMDraggableTagView/**/*.{h,m}"
-  s.framework    = "UIKit","SnapKit"
+  s.source_files = "MMDraggableTagView", "MMDraggableTagView/**/*.{h,m}"
+  s.framework    = "UIKit"
+  s.dependency 'SnapKit'
   s.requires_arc = true
 end
