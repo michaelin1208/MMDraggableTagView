@@ -1,0 +1,6 @@
+framework module Pods_MMDraggableTagViewDemo {
+  umbrella header "Pods-MMDraggableTagViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

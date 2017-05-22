@@ -15,6 +15,7 @@
 		0146B7C31ED2A58A0068F120 /* MMDraggableTagData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146B7C01ED2A58A0068F120 /* MMDraggableTagData.swift */; };
 		0146B7C41ED2A58A0068F120 /* MMDraggableTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146B7C11ED2A58A0068F120 /* MMDraggableTagView.swift */; };
 		0146B7C51ED2A58A0068F120 /* MMDraggableTagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146B7C21ED2A58A0068F120 /* MMDraggableTagViewCell.swift */; };
+		EC325793109F9393E0E1F6E9 /* Pods_MMDraggableTagViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C0B554F9AAD569C0AE7578 /* Pods_MMDraggableTagViewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		0146B7C01ED2A58A0068F120 /* MMDraggableTagData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDraggableTagData.swift; sourceTree = "<group>"; };
 		0146B7C11ED2A58A0068F120 /* MMDraggableTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDraggableTagView.swift; sourceTree = "<group>"; };
 		0146B7C21ED2A58A0068F120 /* MMDraggableTagViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMDraggableTagViewCell.swift; sourceTree = "<group>"; };
+		41576D8B35FCDA09C2DC3DCC /* Pods-MMDraggableTagViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDraggableTagViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMDraggableTagViewDemo/Pods-MMDraggableTagViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A1C0B554F9AAD569C0AE7578 /* Pods_MMDraggableTagViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMDraggableTagViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC59E8A149639738A305659 /* Pods-MMDraggableTagViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDraggableTagViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMDraggableTagViewDemo/Pods-MMDraggableTagViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC325793109F9393E0E1F6E9 /* Pods_MMDraggableTagViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				0146B7AC1ED2A57D0068F120 /* MMDraggableTagViewDemo */,
 				0146B7AB1ED2A57D0068F120 /* Products */,
+				47E08BF58178EF326477139B /* Pods */,
+				53AE72523492750E203607C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,23 @@
 			path = ../../MMDraggableTagView;
 			sourceTree = "<group>";
 		};
+		47E08BF58178EF326477139B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41576D8B35FCDA09C2DC3DCC /* Pods-MMDraggableTagViewDemo.debug.xcconfig */,
+				FBC59E8A149639738A305659 /* Pods-MMDraggableTagViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53AE72523492750E203607C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1C0B554F9AAD569C0AE7578 /* Pods_MMDraggableTagViewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0146B7BC1ED2A57D0068F120 /* Build configuration list for PBXNativeTarget "MMDraggableTagViewDemo" */;
 			buildPhases = (
+				06E56AED983DA65C20ABF1CB /* [CP] Check Pods Manifest.lock */,
 				0146B7A61ED2A57D0068F120 /* Sources */,
 				0146B7A71ED2A57D0068F120 /* Frameworks */,
 				0146B7A81ED2A57D0068F120 /* Resources */,
+				74818FA47225FF49BB0B47F8 /* [CP] Embed Pods Frameworks */,
+				1015B81EEE213FEF99CD05A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06E56AED983DA65C20ABF1CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1015B81EEE213FEF99CD05A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMDraggableTagViewDemo/Pods-MMDraggableTagViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74818FA47225FF49BB0B47F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMDraggableTagViewDemo/Pods-MMDraggableTagViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0146B7A61ED2A57D0068F120 /* Sources */ = {
@@ -282,6 +357,7 @@
 		};
 		0146B7BD1ED2A57D0068F120 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41576D8B35FCDA09C2DC3DCC /* Pods-MMDraggableTagViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N7XBVXGJLT;
@@ -295,6 +371,7 @@
 		};
 		0146B7BE1ED2A57D0068F120 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC59E8A149639738A305659 /* Pods-MMDraggableTagViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N7XBVXGJLT;
